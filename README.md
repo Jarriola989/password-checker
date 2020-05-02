@@ -12,6 +12,6 @@ Have these packages installed:
 -  `pip3 install requests`
 
 Run:
-- `checkpass.py {your_pass_here}`
+- `python3 checkpass.py {your_pass_here}`
 
 You can enter as many passwords as you wish.
