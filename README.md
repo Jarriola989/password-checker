@@ -11,7 +11,7 @@ back potential matches. Then we check if any of those matches match your hashed 
 Have these packages installed:
 -  `pip3 install requests`
 
-Run:
+From terminal:
 - `python3 checkpass.py {your_pass_here}`
 
 You can enter as many passwords as you wish.

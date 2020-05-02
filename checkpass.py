@@ -16,6 +16,7 @@ def read_potential_matches(response, tail):
     for potential_hash, count in hashes:
         if potential_hash == tail:
             return count
+    return 0
 
 
 def hash_password(password):
@@ -34,4 +35,5 @@ def main(args):
             print('No compromises. All good!')
 
 
-main(sys.argv[1:])
+if __name__ == '__main__':
+    sys.exit(main(sys.argv[1:]))
