@@ -10,8 +10,13 @@ back potential matches. Then we check if any of those matches match your hashed 
 
 Have these packages installed:
 -  `pip3 install requests`
+- `pip3 install flask`
+
+Environment
+- In your .zshrc or similar, set `FLASK_APP=server.py`
 
 From terminal:
-- `python3 checkpass.py {your_pass_here}`
+- Make sure you cd into the root folder and run `flask run`
 
-You can enter as many passwords as you wish.
+You can test out the app on port 5000 through postman or similar app!
+Make sure your input matches `{ "password": {YOUR_PASSWORD} }`

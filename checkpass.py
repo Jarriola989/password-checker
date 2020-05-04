@@ -1,6 +1,5 @@
 import requests
 import hashlib
-import sys
 
 
 def request_pawned_passwords(pass_fragment):
@@ -26,14 +25,9 @@ def hash_password(password):
     return read_potential_matches(response, tail)
 
 
-def main(args):
-    for password in args:
-        compromised_count = hash_password(password)
-        if compromised_count:
-            print(f'Oh no. Looks like password {password} was compromised ${compromised_count} times.')
-        else:
-            print('No compromises. All good!')
-
-
-if __name__ == '__main__':
-    sys.exit(main(sys.argv[1:]))
+def check_password(password):
+    compromised_count = hash_password(password)
+    if compromised_count:
+        return f'Oh no. Your password was compromised ${compromised_count} times!'
+    else:
+        return 'No compromises. All good!'
