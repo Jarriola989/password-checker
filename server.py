@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
-import json;
 import checkpass
 
 app = Flask(__name__)
