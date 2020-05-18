@@ -28,6 +28,6 @@ def hash_password(password):
 def check_password(password):
     compromised_count = hash_password(password)
     if compromised_count:
-        return f'Oh no. Your password was compromised ${compromised_count} times!'
+        return f'Oh no. Your password was compromised {compromised_count} times!'
     else:
         return 'No compromises. All good!'
